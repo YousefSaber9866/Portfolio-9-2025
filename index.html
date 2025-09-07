@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yousef S. | Portfolio</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f8f9fb;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      color: #007acc;
+      font-weight: 600;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #007acc;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      text-align: center;
+      background: linear-gradient(135deg, #e3f2fd, #e0f7fa);
+      padding: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #007acc;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin-bottom: 2rem;
+    }
+
+    .hero a {
+      background: #007acc;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .hero a:hover {
+      background: #005fa3;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: #007acc;
+      border-left: 5px solid #00b894;
+      padding-left: 10px;
+      font-weight: 600;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+
+    .interests span {
+      background: #f1f3f5;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #555;
+    }
+
+    .vision {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      font-size: 1rem;
+    }
+
+    .contact-info ul {
+      list-style: none;
+    }
+
+    .contact-info li {
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .contact-info a {
+      color: #007acc;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #005fa3;
+    }
+
+    footer {
+      background: #007acc;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Yousef S.</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Hi, I'm Yousef Saber.</h2>
+    <p>
+      A Junior Data Analyst passionate about transforming data into meaningful insights.  
+      Skilled in analytics, programming, and building digital solutions that solve real-world problems.  
+      Always eager to learn, grow, and contribute to impactful projects.
+    </p>
+    <a href="https://www.linkedin.com/in/yousef-saber-09123625a" target="_blank">Connect on LinkedIn</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h3>About Me</h3>
+    <p>
+      I am a 21-year-old Data Analyst from 6th of October City, Egypt.  
+      With a background in Computer Science and certifications in Power BI, AI, and programming,  
+      I bring both technical expertise and problem-solving skills.  
+      I enjoy working with data, creating dashboards, and building full-stack solutions.  
+      My career goal is to grow into a data professional who bridges the gap between data, technology, and business value.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h3>Skills</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Programming & Development</h4>
+        <p>Python, Java, C++, JavaScript, HTML, CSS, SQL, Flask</p>
+      </div>
+      <div class="card">
+        <h4>Data & BI</h4>
+        <p>Power BI, ETL, Data Cleaning, Dashboard Design, Data Visualization</p>
+      </div>
+      <div class="card">
+        <h4>Tools & Software</h4>
+        <p>Microsoft Excel, Word, PowerPoint | Embedded Systems | Networking</p>
+      </div>
+      <div class="card">
+        <h4>Soft Skills</h4>
+        <p>Problem Solving, Teamwork, Time Management, Quick Learner</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Interactive Dashboard</h4>
+        <p>
+          Designed an interactive Power BI dashboard for business insights.  
+          Led the ETL process, cleaned and transformed data, built relationships, and created KPIs.  
+          Resulted in a more efficient decision-making process.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Full-Stack Website</h4>
+        <p>
+          Built a complete web solution for Zamalek Club Association.  
+          Developed the front-end with HTML, CSS, JavaScript and integrated the back-end using Flask.  
+          Delivered within two days as a volunteer project.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Custom Dashboards</h4>
+        <p>
+          Created multiple dashboards for different domains.  
+          Focused on presenting data in a clear and actionable way, tailored to client needs.  
+          Combined technical design with business understanding.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests -->
+  <section id="interests">
+    <h3>Interests</h3>
+    <div class="interests">
+      <span>Data Analysis</span>
+      <span>Data Processing</span>
+      <span>Data Cleaning</span>
+      <span>Data Driven decisions</span>
+      <span>Data visualization</span>
+      <span>Microsoft Power BI</span>
+      <span>Artificial Intelligence</span>
+      <span>EDA</span>
+      <span>Probability & Statistics</span>
+      <span>Matplotlib</span>
+      <span>Seaborn</span>
+      <span>Plotly</span>
+      <span>Machine Learning</span>
+      <span>Supervised ML</span>
+      <span>Unsupervised ML</span>
+      <span>Association Rule</span>
+      <span>AI Metrics</span>
+      <span>Excel</span>
+      <span>Word</span>
+      <span>PowerPoint</span>
+      <span>Freelance</span>
+      <span>Life Coach</span>
+      <span>Teaching</span>
+      <span>FinTech</span>
+      <span>IT</span>
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section id="vision">
+    <h3>My Vision</h3>
+    <div class="vision">
+      Combine Analytics and Embedded Software for real-time purposes like Smart Homes,  
+      and real-time analytics reporting to create smarter, more connected solutions.
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h3>Contact</h3>
+    <div class="contact-info">
+      <ul>
+        <li><i class="fas fa-phone"></i><strong> Phone:</strong> 01000659866</li>
+        <li><i class="fas fa-envelope"></i><strong> Email:</strong> <a href="mailto:yousef@example.com">yousef@example.com</a></li>
+        <li><i class="fab fa-linkedin"></i><strong> LinkedIn:</strong> <a href="https://www.linkedin.com/in/yousef-saber-09123625a" target="_blank">linkedin.com/in/yousef-saber</a></li>
+        <li><i class="fas fa-id-card"></i><strong> Driving License:</strong> Available</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Yousef S. | Portfolio
+  </footer>
+</body>
+</html>
